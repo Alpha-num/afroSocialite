@@ -58,7 +58,7 @@
                                             <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
                                             <p class="text-center small">Enter your personal details to create account</p>
                                         </div>
-                                        <form class="row g-3 needs-validation" novalidate>
+                                        <form id="registerForm" class="row g-3 needs-validation" novalidate>
                                             <div class="col-12">
                                                 <label for="yourName" class="form-label">Your Name</label>
                                                 <input
@@ -124,7 +124,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <button class="btn btn-primary w-100" type="submit">
+                                                <button id="register" class="btn btn-primary w-100" type="submit">
                                                     Create Account
                                                     <span
                                                         style="visibility: hidden;"
@@ -165,7 +165,7 @@
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
         <script>
-          let loginForm = document.querySelector('#loginForm').addEventListener('submit', (e) =>{
+          let loginForm = document.querySelector('#registerForm').addEventListener('submit', (e) =>{
             e.preventDefault();
             let spinner = document.querySelector('.spinner');
             spinner.style.visibility = 'visible';
